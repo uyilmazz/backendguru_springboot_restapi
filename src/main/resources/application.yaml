@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: restapiegitimders1
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/product
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: none   # Production için validate, development için update yapabilirsin
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+jwt:
+  secret: my-super-secret-key-that-is-at-least-256-bits-long-for-hs256

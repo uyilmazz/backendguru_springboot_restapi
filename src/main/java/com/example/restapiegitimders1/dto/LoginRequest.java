@@ -1,0 +1,10 @@
+package com.example.restapiegitimders1.dto;
+
+
+public record LoginRequest (
+		String username,
+		String password
+		)
+{
+}
+
