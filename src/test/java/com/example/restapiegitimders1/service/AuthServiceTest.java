@@ -17,7 +17,6 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 
 import com.example.restapiegitimders1.entity.User;
 
-@SpringBootTest
 @ExtendWith(MockitoExtension.class)
 @DisplayName("AuthService Unit Tests")
 public class AuthServiceTest {
